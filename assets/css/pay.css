@@ -1,0 +1,64 @@
+.pay {
+    margin-left: 17%;
+}
+
+.pay-name {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 30px;
+    padding: 8px;
+    margin-top: 50px;
+}
+
+.pay-form {
+    margin-left: 26%;
+    display: inline-block;
+    text-align: center;
+}
+
+.pay-input {
+    width: 480px;
+    height: 30px;
+    margin-bottom: 12px;
+    border: 2px solid #ff6900;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pay-input-btn {
+    width: 100px;
+    padding: 4px;
+    margin-left: 380px;
+    margin-top: 4px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: rgb(226, 171, 3);
+}
+
+.pay-input-btn:hover {
+    background-color: #000;
+    opacity: 0.6;
+    color: #fff;
+    cursor: pointer;
+}
+/* paymen2 */
+.pay-table-1 {
+    width: 30%;
+    margin: 8px;
+}
+.pay-table-2 {
+    width: 60%;
+    margin: 8px;
+}
+.pay-name-2 {
+    margin-top: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 40px;
+    font-size: 30px;
+    padding: 12px;
+}

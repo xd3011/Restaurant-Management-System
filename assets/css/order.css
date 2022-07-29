@@ -1,0 +1,50 @@
+.order {
+    margin-left: 17%;
+    position: fixed;
+    width: 50%;
+}
+
+.order-name {
+    margin-top: 0;
+    margin-left: 26%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.order-menu {
+    position: absolute;
+    margin-left: 60%;
+}
+
+.order-input {
+    width: 480px;
+    height: 30px;
+    margin-bottom: 8px;
+    margin-left: 12px;
+    border: 2px solid #ff6900;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.order-input-first {
+    margin-top: 4px;
+}
+
+.order-input-btn {
+    width: 100px;
+    padding: 4px;
+    margin-left: 396px;
+    margin-top: 4px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: rgb(226, 171, 3);
+}
+.order-input-btn:hover {
+    background-color: #000;
+    opacity: 0.6;
+    color: #fff;
+    cursor: pointer;
+}

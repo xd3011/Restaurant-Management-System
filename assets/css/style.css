@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: #dff3e7;
+}
+
+a {
+    text-decoration: none
+}
+
+i {
+    margin-right: 10px;
+}
+.sidebar {
+    position: fixed;
+    width: 6.5rem;
+    min-height: 100vh;
+    background-color: #4B70DD
+}
+
+.sidebar-brand { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.sidebar-house {
+    font-size: 24px;
+    padding-top: 24px;
+    font-weight: 600;
+}
+
+.sidebar-home-page {
+    margin-top: 12px;
+}
+
+.sidebar-location {
+    justify-content: left;
+    margin-bottom: 14px;
+}
+
+.sidebar-heading {
+    color: rgba(255,255,255,.4);
+    font-size: 12px;
+    padding-left: 12px;
+    margin-bottom: 8px;
+}
+
+.sidebar-opacity {
+    color: rgba(255,255,255,.4);
+}
+
+.sidebar-opacity:hover {
+    color: #fff
+}
+
+.sidebar-line {
+    margin: 1px 2rem 1rem;
+    border-bottom: 0px;
+}
+
+.content-border {
+    background-color: rgb(211, 114, 89);
+}
+
+.content-border-title {
+    margin: 0 0 0 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 28px;
+    color: #fff;
+    font-family: Cursive;
+}
+.content-background-slideshow {
+    margin-left: 17%;
+    width: 83%;
+    position: absolute;
+}

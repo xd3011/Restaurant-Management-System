@@ -1,0 +1,21 @@
+.content-button {
+    position: absolute;
+    bottom: 42.25%;
+}
+
+.content-button-left, .content-button-right {
+    font-size: 40px;
+    padding: 6px;
+}
+.content-button-left {
+    margin-left: 17%;
+    display: inline-block;
+}
+.content-button-right {
+    float: right;
+}
+
+.content-button-left:hover, .content-button-right:hover {
+    cursor: pointer;
+    color: aqua;
+}

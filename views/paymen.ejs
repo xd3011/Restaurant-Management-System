@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="./css/pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Thanh Toán</title>
+</head>
+
+<body>
+    <div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="/" class="sidebar-brand sidebar-house">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div>Project SQL</div>
+            </a>
+            <hr>
+            <a href="/" class="sidebar-brand sidebar-home-page sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+                <div>Home page</div>
+            </a>
+            <hr>
+            <div class="sidebar-heading">CHỨC NĂNG</div>
+            <a href="/menu.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div>Menu</div>
+            </a>
+            <a href="/set_table.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+                <div>Đặt Bàn</div>
+            </a>
+            <a href="/set_the_table.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-plate-wheat"></i>
+                </div>
+                <div>Gọi Món</div>
+            </a>
+            <a href="/pay.html" class="sidebar-brand sidebar-location">
+                <div>
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                </div>
+                <div>Thanh Toán</div>
+            </a>
+            <hr>
+            <div class="sidebar-heading">QUẢN LÝ</div>
+            <a href="../Manage/client.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <div>Danh Sách Khách Hàng</div>
+            </a>
+        </div>
+    </div>
+    <div class="menu-insert-slider">
+        <img src="/image/menu-insert/image-1.jpg" alt="Image-Demo" class="menu-insert-image">
+        <img src="/image/menu-insert/image-2.jpg" alt="Image-Demo" class="menu-insert-image">
+        <img src="/image/menu-insert/image-3.jpg" alt="Image-Demo" class="menu-insert-image">
+    </div>
+    <div class="pay">
+        <b class="pay-name">Thanh Toán</b>
+        <form action="" method="POST" enctype="application/x-www-form-urlencoded" class="pay-form">
+            <input class="pay-input" type="text" name="txtCustomer_id" placeholder="ID Khach Hang"> <br />
+            <input class="pay-input" type="text" name="txtDate" placeholder="Thoi Gian"> <br />
+            <input class="pay-input-btn" type="submit" name="btnGoiMon" placeholder="GoiMon">
+        </form>
+    </div>
+</body>
+
+</html>

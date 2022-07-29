@@ -1,0 +1,102 @@
+.menu {
+    margin-left: 17%;
+    position: absolute;
+}
+
+.menu-name {
+    margin-top: 0;
+    margin-left: 26%;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.menu-table {
+    font-size: 20px;
+    margin: 4px;
+}
+
+.menu-table-border {
+    border-radius: 8px;
+    box-shadow: 0 0 5px grey;
+}
+
+.menu-table-margin {
+    margin-top: 8px;
+    height: 36px;
+}
+
+.menu-table-delete {
+    color: rgb(32, 109, 225)
+}
+
+.menu-insert {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: rgb(226, 171, 3);
+    width: 104px;
+}
+
+.menu-insert:hover, .menu-insert-name:hover {
+    background-color: rgb(32, 109, 225);
+    /* opacity: 0.6; */
+    color : #fff;
+}
+
+.menu-slider {
+    position: fixed;
+    right: 0;
+}
+
+
+/* Menu-Insert */
+.menu-insert-slider {
+    margin-left: 17%;
+}
+
+.menu-insert-image {
+    width: 33.06%;
+}
+
+.menu-insert-center {
+    top: 40%;
+    left: 20%;
+}
+
+.menu-name-style {
+    margin-left: 44px;
+    margin-top: 0;
+    font-size: 60px;
+    padding: 24px;
+}
+
+.menu-insert-form {
+    width: 500px;
+    height: 30px;
+    margin-bottom: 8px;
+    border: 2px solid #ff6900;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.menu-insert-btn {
+    width: 100px;
+    padding: 4px;
+    margin-left: 408px;
+    margin-top: 4px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: rgb(226, 171, 3);
+}
+
+.menu-insert-btn:hover {
+    background-color: #000;
+    opacity: 0.6;
+    color: #fff;
+    cursor: pointer;
+}

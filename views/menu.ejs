@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Menu</title>
+</head>
+<body>
+    <div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="/" class="sidebar-brand sidebar-house">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div>Project SQL</div>
+            </a>
+            <hr>
+            <a href="/" class="sidebar-brand sidebar-home-page sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+                <div>Home page</div>
+            </a>
+            <hr>
+            <div class="sidebar-heading">CHỨC NĂNG</div>
+            <a href="/menu.html" class="sidebar-brand sidebar-location ">
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div>Menu</div>
+            </a>
+            <a href="/set_table.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+                <div>Đặt Bàn</div>
+            </a>
+            <a href="/set_the_table.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-plate-wheat"></i>
+                </div>
+                <div>Gọi Món</div>
+            </a>
+            <a href="/pay.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                </div>
+                <div>Thanh Toán</div>
+            </a>
+            <hr>
+            <div class="sidebar-heading">QUẢN LÝ</div>
+            <a href="../Manage/client.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <div>Danh Sách Khách Hàng</div>
+            </a>
+        </div>
+        <div class="menu">
+            <b class="menu-name">Danh Sách Món Ăn</b>
+            <table width="522" class="menu-table"> 
+                <tr class="menu-table-border">
+                    <td>STT</td>
+                    <td>TÊN MÓN</td>
+                    <td>GIÁ</td>
+                    <td width="60">
+                        <button class="menu-insert">
+                            <a href="../menu.html/menu_insert" class="menu-insert-name">Thêm Món Ăn</a>
+                        </button>
+                    </td>
+                </tr>
+                <% danhsach1.rows.forEach(function(sv){ %> 
+                <tr class="menu-table-border menu-table-margin">
+                    <td><%= sv.meal_id %> </td>
+                    <td><%= sv.meal_name %></td>
+                    <td><%= sv.price %></td>
+                    <td><a class="menu-table-delete" href="../menu.html/menu_delete/<%= sv.meal_id%>">Xóa</a></td>
+                </tr>
+                <% }); %> 
+            </table>
+        </div>
+        <div class="menu-slider">
+            <img src="./image/menu/slider-menu.jpg" alt="Slider Menu">
+        </div>
+    </div>
+</body>
+</html>

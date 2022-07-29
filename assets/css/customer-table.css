@@ -1,0 +1,20 @@
+.customer-insert, .customer-table {
+    margin-left: 17%;
+}
+
+.customer-insert {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    height: 72px;
+}
+
+.customer-table {
+    width: 83%;
+}
+
+.customer-button {
+    color: rgb(207, 147, 8);
+}

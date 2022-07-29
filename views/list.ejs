@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/customer-table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Danh Sách Khách Hàng</title>
+</head>
+    <body>
+        <div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <a href="/" class="sidebar-brand sidebar-house">
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div>Project SQL</div>
+                </a>
+                <hr>
+                <a href="/" class="sidebar-brand sidebar-home-page sidebar-location sidebar-opacity">
+                    <div>
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <div>Home page</div>
+                </a>
+                <hr>
+                <div class="sidebar-heading">CHỨC NĂNG</div>
+                <a href="/menu.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                    <div>
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>Menu</div>
+                </a>
+                <a href="/set_table.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                    <div>
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <div>Đặt Bàn</div>
+                </a>
+                <a href="/set_the_table.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                    <div>
+                        <i class="fa-solid fa-plate-wheat"></i>
+                    </div>
+                    <div>Gọi Món</div>
+                </a>
+                <a href="/pay.html" class="sidebar-brand sidebar-location sidebar-opacity">
+                    <div>
+                        <i class="fa-solid fa-money-bill-1-wave"></i>
+                    </div>
+                    <div>Thanh Toán</div>
+                </a>
+                <hr>
+                <div class="sidebar-heading">QUẢN LÝ</div>
+                <a href="../Manage/client.html" class="sidebar-brand sidebar-location">
+                    <div>
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div>Danh Sách Khách Hàng</div>
+                </a>
+            </div>
+            <b class="customer-insert"><a href="/Manage/client.html/customer_insert" class="customer-button"> Nếu là khách hàng mới hãy bấm vào đây để thêm thông tin</a></b>
+            <table border = "1", class="customer-table"> 
+                <tr>
+                    <td>ID KHACH HANG</td>
+                    <td>TEN KHACH HANG</td>
+                    <td>EMAIL</td>
+                    <td>NGAY SINH</td>
+                </tr>
+                <% danhsach.rows.forEach(function(sv){ %> 
+                <tr>
+                    <td><%= sv.customer_id %> </td>
+                    <td><%= sv.customer_name %></td>
+                    <td><%= sv.email %></td>
+                    <td><%= sv.date_of_birth %></td>
+                </tr>
+                <% }); %> 
+            </table>
+        </div>
+    </body>
+</html>

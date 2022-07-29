@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sach </title>
+</head>
+    <body>
+        <b class="menu-name">Danh Sách Bàn Ăn</b>
+            <table width="682" border="1" class="menu-table"> 
+                <tr>
+                    <td class="menu-table-name">TABLE ID </td>
+                    <td class="menu-table-name">CUSTOMER ID</td>
+                    <td class="menu-table-name">TIME</td>
+                    
+                </tr>
+                <% danhsach4.rows.forEach(function(sv){ %> 
+                <tr>
+                    <td><%= sv.table_id %> </td>
+                    <td><%= sv.customer_id %></td>
+                    <td><%= sv.date_time %></td>
+                    <td><a class="delete" href="../pay.html/delete_payment/<%= sv.customer_id%>">Xóa</a></td>
+                </tr>
+                <% }); %> 
+            </table>
+    <h2> <a href="/"> Trang chu</a></h2>
+    </body>
+</html>
